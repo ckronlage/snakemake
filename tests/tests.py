@@ -2464,3 +2464,6 @@ def test_ambiguousruleexception():
 
 def test_github_issue3556():
     run(dpath("test_github_issue3556"), shellcmd="snakemake --dag mermaid-js >dag.mmd")
+
+def test_function_output():
+    run(dpath("test_function_output"))

@@ -557,10 +557,12 @@ class Rule(RuleInterface):
             if name:
                 inoutput._add_name(name)
         elif callable(item):
+            """
             if output:
                 raise RuleException(
                     "Only input files can be specified as functions", rule=self
                 )
+            """
 
             item = default_flags.apply(item)
 

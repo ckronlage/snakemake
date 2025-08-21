@@ -1,0 +1,17 @@
+
+
+def out_func(wildcards):
+    return "out.txt"
+
+rule all:
+    input:
+        "out.txt",
+
+rule test:
+    output:
+        out_func
+
+    shell:
+        """
+        touch {output}
+        """
